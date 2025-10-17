@@ -18,7 +18,23 @@ export default async function TutorialProductPage() {
   })
 
   if (!tutorial) {
-    return <div>Tutorial not found</div>
+    return (
+      <div className="min-h-screen bg-white">
+        <Header />
+        <section className="small-ai-section bg-white">
+          <div className="container mx-auto px-4 max-w-5xl text-center">
+            <h1 className="text-4xl font-bold mb-6">Tutorial Coming Soon</h1>
+            <p className="text-xl text-gray-700 mb-8">
+              We're setting up our AI Basics Workshop. Check back soon!
+            </p>
+            <Link href="/" className="small-ai-button-yellow px-8 py-4 rounded-sm font-bold inline-block">
+              Back to Home
+            </Link>
+          </div>
+        </section>
+        <Footer />
+      </div>
+    )
   }
 
   const stripeCheckoutUrl = 'https://buy.stripe.com/small-ai-checkout'
