@@ -8,6 +8,7 @@
       "es2020"
     ],
     "allowJs": true,
+    "noImplicitAny": false,
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
