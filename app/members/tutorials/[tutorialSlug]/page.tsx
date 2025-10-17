@@ -8,6 +8,8 @@ import { prisma } from '@/lib/db'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
 
+export const dynamic = 'force-dynamic'
+
 export default async function TutorialOverviewPage({
   params,
 }: {

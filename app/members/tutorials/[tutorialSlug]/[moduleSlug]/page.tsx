@@ -9,6 +9,8 @@ import Header from '@/components/header'
 import Footer from '@/components/footer'
 import ReactMarkdown from 'react-markdown'
 
+export const dynamic = 'force-dynamic'
+
 export default async function ModulePage({
   params,
 }: {

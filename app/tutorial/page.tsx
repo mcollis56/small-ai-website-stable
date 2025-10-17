@@ -5,6 +5,8 @@ import Header from '@/components/header'
 import Footer from '@/components/footer'
 import { prisma } from '@/lib/db'
 
+export const dynamic = 'force-dynamic'
+
 export default async function TutorialProductPage() {
   const tutorial = await prisma.tutorial.findUnique({
     where: { slug: 'ai-basics-workshop' },
