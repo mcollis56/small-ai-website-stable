@@ -1,0 +1,149 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 0 0% 0%;
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 0%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 0%;
+  --primary: 0 0% 0%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 48 100% 72%;
+  --secondary-foreground: 0 0% 0%;
+  --muted: 0 0% 96%;
+  --muted-foreground: 0 0% 40%;
+  --accent: 48 100% 72%;
+  --accent-foreground: 0 0% 0%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 0 0% 89%;
+  --input: 0 0% 89%;
+  --ring: 48 100% 72%;
+  --radius: 0.25rem;
+}
+
+.dark {
+  --background: 0 0% 0%;
+  --foreground: 0 0% 100%;
+  --card: 0 0% 0%;
+  --card-foreground: 0 0% 100%;
+  --popover: 0 0% 0%;
+  --popover-foreground: 0 0% 100%;
+  --primary: 0 0% 100%;
+  --primary-foreground: 0 0% 0%;
+  --secondary: 48 100% 72%;
+  --secondary-foreground: 0 0% 0%;
+  --muted: 0 0% 15%;
+  --muted-foreground: 0 0% 60%;
+  --accent: 48 100% 72%;
+  --accent-foreground: 0 0% 0%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 0 0% 15%;
+  --input: 0 0% 15%;
+  --ring: 48 100% 72%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  color: #000000;
+  background: #FFFFFF;
+  font-feature-settings: 'kern' 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Small AI Brand Styles - Minimal & Sharp */
+.small-ai-button {
+  background: #000000;
+  color: #FFFFFF;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid #000000;
+}
+
+.small-ai-button:hover {
+  background: #FFFFFF;
+  color: #000000;
+  border: 2px solid #000000;
+}
+
+.small-ai-button-yellow {
+  background: #FFE36E;
+  color: #000000;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid #FFE36E;
+  font-weight: 600;
+}
+
+.small-ai-button-yellow:hover {
+  background: #000000;
+  color: #FFE36E;
+  border: 2px solid #000000;
+}
+
+.small-ai-card {
+  border: 2px solid #000000;
+  transition: all 0.2s ease;
+}
+
+.small-ai-card:hover {
+  box-shadow: 8px 8px 0 #FFE36E;
+  transform: translate(-4px, -4px);
+}
+
+.small-ai-highlight {
+  background: #FFE36E;
+  padding: 0 0.25rem;
+  display: inline;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.small-ai-section {
+  padding: 4rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .small-ai-section {
+    padding: 6rem 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .small-ai-section {
+    padding: 8rem 2rem;
+  }
+}
+
+/* Typography with personality */
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Container with generous space */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}

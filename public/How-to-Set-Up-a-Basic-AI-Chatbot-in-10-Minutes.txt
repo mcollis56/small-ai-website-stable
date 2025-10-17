@@ -1,0 +1,12 @@
+# How to Set Up a Basic AI Chatbot in 10 Minutes
+
+A comprehensive guide for small businesses to implement AI chatbots quickly and efficiently.
+
+## Quick Setup Guide
+1. Choose your platform (ChatGPT API, Dialogflow, etc.)
+2. Define your chatbot's purpose and responses
+3. Set up basic conversation flows
+4. Test and refine
+5. Deploy to your website
+
+This resource provides step-by-step instructions for implementation.
