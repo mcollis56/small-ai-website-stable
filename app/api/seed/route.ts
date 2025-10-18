@@ -19,8 +19,9 @@ export async function POST(req: Request) {
     });
     return NextResponse.json({ message: 'Database seeded successfully' });
   } catch (error) {
+    console.error("Error seeding database:", error);
     return new NextResponse('Error seeding database', { status: 500 });
   } finally {
-    await prisma.();
+    await prisma.$disconnect();
   }
 }
