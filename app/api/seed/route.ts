@@ -4,10 +4,11 @@ import bcrypt from 'bcryptjs'
 
 export async function POST(request: Request) {
   try {
-    // Simple authentication - check for a secret key
-    const { secret } = await request.json()
+    // Simple authentication - check for a secret key in Authorization header
+    const authHeader = request.headers.get('authorization')
+    const token = authHeader?.replace('Bearer ', '')
 
-    if (secret !== process.env.SEED_SECRET) {
+    if (!token || token !== process.env.SEED_SECRET) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
     }
 
